@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Policlinica de Stat</title>
+  
+
+</head>
+
+<body>
+  <header>
+    <div class="header">
+    <a href="index.html">
+      <img src="images/logo.png" alt="logo" />
+
+
+      <h2 class="title"> Policlinica de Stat</h2>
+      
+    </div></div>
+
+  
+    </a>
+  </header>
+  <div>
+    <div class="page-container">
+      <aside id="side-menu">
+
+        <a href="index.html">Acasă</a>
+        <a href="pages/structura.html">Structura</a>
+        <a href="pages/programare.html">Programare</a>
+        <a href="pages/posturi.html">Posturi</a>
+        <a href="https://achizitii.md/ro/public/tender/list?q=&price_min=&price_max=&idno=1006601003924">Achiziții</a>
+        <a href="pages/contacte.html">Contacte</a>
+
+        </a>
+      </aside>
+
+      <main>
+        <br>
+        <h2 class="h2">Acasă</h2>
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="images/img10.jpg" style="max-width:100%;height:auto;" style="max-width:100%;height:auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="images/img11.jpg" style="max-width:100%;height:auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="images/img12.jpg" style="max-width:100%;height:auto;">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+          }
+        </script>
+
+        <div class="row">
+
+          <div class="col-70">
+            <div class="informatii">
+
+              <h3>Despre Noi</h3>
+
+
+              <p>
+                IMSP Policlinica de Stat este o instituţie medico-sanitară publică menită să asigure
+                menținerea și ameliorarea sănătăţii contingentului arondat prin asigurarea accesului
+                echitabil al pacienților la servicii de sănătate, de calitate, cu accentuarea măsurilor de
+                profilaxie primară, secundară şi terţiară și prin susținerea intervențiilor de promovare a
+                unui mod de viață sănătos.
+              </p>
+            </div>
+
+            <div class="informatii">
+
+              <p>
+                Conform Regulamentului de activitate, Policlinica asigură următoarele tipuri de asistenţă şi
+                servicii medicale:
+              <ul style="list-style: square;">
+                <li>urgenţa la etapa prespital;</li>
+                <li>asistenţa medicală primară;</li>
+                <li>asistenţa medicală specializată de ambulator, inclusiv stomatologică;</li>
+                <li>servicii medicale de înaltă performanţă;</li>
+                <li>îngrijiri medicale la domiciliu.</li>
+              </ul>
+              </p>
+            </div>
+
+            
+          </div>
+        </div>
+        <h3 class="h3">Află despre <a href="resources/istorie.pdf" class="link"> Istoria Policlinicii de Stat </a> </h3>
+        
+        
+      </main>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p class="text">Acest website a fost realizat în cadrul competiției "Tekwill Junior Ambassadors"
+    <p class="text">organizată de proiectul "Tekwill</p>
+    <p class="text">în Fiecare Școală" și nu reflectă neapărat opinia proiectului. </p>
+    <p class="text">©2022 Efros Viviana, Gogoi Mădălina</p>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
